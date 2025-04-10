@@ -1,0 +1,48 @@
+user@jeshu:~$ mkdir prac
+user@jeshu:~$ cd prac
+user@jeshu:~/prac$ git init
+Initialized empty Git repository in /home/user/prac/.git/
+user@jeshu:~/prac$ la -a
+.  ..  .git
+user@jeshu:~/prac$ git config --global user.name "Jeshwanth1108"
+user@jeshu:~/prac$ git config --global user.email "Jeshu1108@gmail.com"
+user@jeshu:~/prac$ git config --list
+user.name=Jeshwanth1108
+user.email=Jeshu1108@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user@jeshu:~/prac$ git clone https://github.com/Jeshwanth1108/git_prac.git
+Cloning into 'git_prac'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 862 bytes | 123.00 KiB/s, done.
+user@jeshu:~/prac$ ls
+git_prac
+user@jeshu:~/prac$ cd git_prac
+user@jeshu:~/prac/git_prac$ gedit index.html
+q
+^C
+user@jeshu:~/prac/git_prac$ ls
+index.html  README.md
+user@jeshu:~/prac/git_prac$ git add index.html
+user@jeshu:~/prac/git_prac$ git commit -m "10-04-2025"
+[main b377a40] 10-04-2025
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+user@jeshu:~/prac/git_prac$ git remote set-url origin https://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@github.com/Jeshwanth1108/git_prac
+user@jeshu:~/prac/git_prac$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Jeshwanth1108/git_prac
+   8f279ea..b377a40  main -> main
+user@jeshu:~/prac/git_prac$ git pull
+Already up to date.
+user@jeshu:~/prac/git_prac$ 
+
