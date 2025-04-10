@@ -1,0 +1,37 @@
+
+user@jeshu:~$ mkdir jesh
+user@jeshu:~$ cd jesh
+user@jeshu:~/jesh$ git init
+Initialized empty Git repository in /home/user/jesh/.git/
+user@jeshu:~/jesh$ ls -a
+.  ..  .git
+user@jeshu:~/jesh$ gedit demo.java
+user@jeshu:~/jesh$ javac demo.java
+user@jeshu:~/jesh$ java demo
+Hi iam Jeshwanth
+user@jeshu:~/jesh$ git add .
+user@jeshu:~/jesh$ git commit -m "first change"
+[master (root-commit) 024d627] first change
+ 2 files changed, 5 insertions(+)
+ create mode 100644 demo.class
+ create mode 100644 demo.java
+user@jeshu:~/jesh$ git remote add origin https://github.com/Jeshwanth1108/jeshu_jen.git
+fatal: remote origin already exists.
+user@jeshu:~/jesh$ git push -u origin master
+Username for 'https://github.com': Jeshwanth1108 
+Password for 'https://Jeshwanth1108@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 636 bytes | 636.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Jeshwanth1108/jeshu_jen/pull/new/master
+remote: 
+To https://github.com/Jeshwanth1108/jeshu_jen.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+user@jeshu:~/jesh$ 
+
